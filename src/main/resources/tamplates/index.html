@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>GrantCalc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">GrantCalc</a>
+
+    <!-- Botão mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <!-- div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Cadastro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resultado.html">Extrato</a>
+        </li>
+      </ul>
+    </div-->
+
+  </div>
+</nav>
+
+<!-- Conteúdo -->
+<div class="container mt-5">
+
+    <div class="card p-4 shadow">
+        <h4 class="mb-3">Cadastro da Bolsa</h4>
+
+        <form action="resultado.html" method="get">
+
+            <!-- Matrícula -->
+            <div class="mb-3">
+                <label class="form-label">Matrícula</label>
+                <input type="text" name="studentEnrollmentId" class="form-control" placeholder="Ex: 202312345">
+            </div>
+
+            <!-- Valor Base -->
+            <div class="mb-3">
+                <label class="form-label">Valor Base</label>
+                <input type="number" name="baseGrantAmount" class="form-control" step="0.01" placeholder="Ex: 800.00">
+            </div>
+
+            <!-- Auxílios -->
+            <h5 class="mt-4">Auxílios</h5>
+            <hr>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="benefits" value="HOUSING">
+                <label class="form-check-label">Auxílio Moradia</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="benefits" value="TRANSPORT">
+                <label class="form-check-label">Auxílio Transporte</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="benefits" value="FOOD">
+                <label class="form-check-label">Alimentação</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="benefits" value="CHILDCARE">
+                <label class="form-check-label">Creche</label>
+            </div>
+
+            <!-- Penalidades -->
+            <h5 class="mt-4">Descontos / Penalidades</h5>
+            <hr>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="benefits" value="LIBRARY_FINE">
+                <label class="form-check-label">Multa da Biblioteca</label>
+            </div>
+
+            <!-- Botão -->
+            <button type="submit" class="btn btn-primary mt-3 w-100">
+                Calcular Bolsa
+            </button>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
