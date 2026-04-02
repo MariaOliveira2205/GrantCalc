@@ -1,4 +1,4 @@
-# GrantCalc# GrantCalc
+# GrantCalc
 
 ## Sobre o Projeto
 O **GrantCalc** é um sistema acadêmico para cálculo de bolsas estudantis. Permite cadastrar matrícula e valor base, aplicar auxílios (moradia, transporte, creche/alimentação) e penalidades (multa da biblioteca), exibindo um extrato detalhado com o valor final.
